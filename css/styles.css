@@ -8,6 +8,24 @@
     --logo-font-family: 'Raleway', sans-serif;
 
 }
+ 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+   
+}
+
 
 body {
     background-color: var(--secondary-color);
@@ -20,15 +38,41 @@ body {
 
 header {
     background-color: var(--secondary-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
+.container-hed {
+    box-sizing: border-box;
+    display: block;
+    
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: yellow;
+}
+
+
 .logo {
+    display: inline-block;
+    min-width: 145px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-right: 97px;
     text-decoration: none;
     font-family: var(--logo-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 
+}
+
+
+.box {
+    display: inline-block;
+    
 }
 
 .first {
@@ -39,12 +83,18 @@ header {
     color: #000000;
 }
 
-.nav {
+
+.nav > li {
+   
+    display: inline-block;
+    
     list-style: none;
 }
 
-.nav-link {
 
+.nav-link {
+    
+   
     text-decoration: none;
     font-weight: 500;
 
@@ -59,6 +109,7 @@ header {
 }
 
 .link.current {
+    
     text-decoration: none;
     color: var(--accent-color);
 }
@@ -66,9 +117,16 @@ header {
 .link.current:hover,
 .link.current:focus {
     color: var(--accent-color);
+} 
+
+.link-header {
+    display: inline-block;
+    margin-left: 340px;
+    
 }
 
 .link-header-mail {
+    margin-right: 50px;
 
     text-decoration: none;
     font-weight: 500;
@@ -102,26 +160,43 @@ header {
 /* HERO */
 
 .hero {
+    
+    height: 600px;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #27303a;
 
 }
 
+
 .hero-title {
+    position: absolute;
+    width: 696px;
+    padding-top: 200px;
+    left: 452px;
     font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--secondary-color);
 }
 
-.request {
+.request { 
+    position: absolute;
+        width: 152px;
+        
+        left: 724px;
+        top: 440px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    text-align: center;
     color: var(--secondary-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -138,9 +213,31 @@ header {
 
 .visually-hidden {
     visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container.adv {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 118px;
 }
 
 .adv-title {
+    
+    display: flex;
+    
+    vertical-align: middle;
 
     font-weight: 700;
     font-size: 14px;
@@ -149,8 +246,11 @@ header {
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
+.adv-title:not(:last-child) {
+    margin-right: 30px;
+}
 
-.text {
+.text { margin-top: 10px;
     font-weight: 400;
 
     line-height: 1.71;
@@ -298,6 +398,7 @@ address {
 }
 
 .conteiner {
+    margin: 0 auto;
     width: 370px;
     height: 404px;
     background: var(--secondary-color);
