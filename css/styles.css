@@ -180,10 +180,12 @@ header {
 
 
 .hero-title {
-    position: absolute;
+    display: block;
     width: 696px;
     padding-top: 200px;
-    left: 452px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     
     font-family: inherit;
     font-weight: 900;
@@ -197,11 +199,11 @@ header {
 
 .request {
     display: block; 
-    position: absolute;
-        width: 200px;
-        height: 50px;
-        left: 724px;
-        top: 440px;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
     
     font-family: inherit;
     font-weight: 700;
@@ -223,6 +225,11 @@ header {
 
 /* SECTION OUR ADVANTAGES */
 
+
+.advantages {
+    height: 289px;
+}
+
 .visually-hidden {
     visibility: hidden;
     position: absolute;
@@ -242,16 +249,17 @@ header {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 118px;
+    
 }
 
 .adv-title {
     
     display: block;
+    width: 270px;
+    height: 42px;
+    margin-top: 94px;
+    margin-bottom: 118px;
     
-    min-width: 270px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -273,12 +281,42 @@ header {
 
 /* SECTION OUR WORK */
 
-.work-title {
 
+.our-work {
+    height: 480px;
+    margin-bottom: 0;
+}
+
+
+.work-title {
+    
+    width: 198px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    
+}
 
+.container-work {
+    display: flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.item {
+    display: block;
+    
+}
+
+.item:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -286,12 +324,23 @@ header {
 /* SECTION OUR TEAM */
 
 .team {
-
+    height: 648px;
+    margin-top: 0;
+    
     background: #F5F4FA;
 }
 
 
 .team-title {
+    
+    width: 165px;
+    height: 42px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    
 
     font-weight: 700;
     font-size: 36px;
@@ -299,13 +348,39 @@ header {
 
 }
 
-.team img {
-
-    border-radius: 0px
+.container-card {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+        
+}
+.card {
+    display: block;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                                   0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.card:not(:last-child) {
+    margin-right: 30px;
 }
 
-.name {
+.team img {
+    display: block;
+    background: url(.jpg);
+    border-radius: 0px;
+    
+}
 
+
+
+.name {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -314,7 +389,8 @@ header {
 }
 
 .position {
-
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 
