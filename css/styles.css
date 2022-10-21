@@ -19,7 +19,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
     vertical-align: middle;
@@ -51,15 +51,13 @@ header {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
-    background-color: yellow;
-}
+}   
 
 
 .logo {
     display: inline-block;
-    min-width: 145px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    width: 145px;
+    
     
     margin-right: auto;
     text-decoration: none;
@@ -285,7 +283,8 @@ header {
 .our-work {
     height: 480px;
     margin-bottom: 0;
-}
+    padding-bottom: 94px;
+    }
 
 
 .work-title {
@@ -326,7 +325,7 @@ header {
 .team {
     height: 648px;
     margin-top: 0;
-    
+    padding-top: 94px;
     background: #F5F4FA;
 }
 
@@ -338,7 +337,7 @@ header {
     
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
+   
     margin-bottom: 50px;
     
 
@@ -400,7 +399,19 @@ header {
 /* FOOTER */
 
 footer {
+    height: 252px;
     background-color: #27303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+} 
+
+.container-foot {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
 }
 
 address {
@@ -411,13 +422,26 @@ address {
 
 }
 
+
 .address-text {
+    display: block;
+    width: 231px;
+    margin-top: 9px;
+    margin-bottom: 6px;
     color: var(--secondary-color);
+
 }
 
 .link-touch {
+    display: inline-block;
+    width: 231px; 
+    
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.link-touch:not(:last-child) {
+    margin-bottom: 2px;
 }
 
 .link-touch:hover,
@@ -439,16 +463,40 @@ address {
 
 /* SECTION GALERY */
 
-.galery-progects {
-    background: #E5E5E5;
+.galery {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #ffffff;
 }
 
 .visually-hidden {
     visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container-button {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    justify-content: center;
+
 }
 
+
 .main,
-.filter-nav {
+.filter {
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -458,16 +506,49 @@ address {
 }
 
 .main {
+    display: block;
+    width: 73px;
+    height: 38px;
+    border-color: transparent;
     color: var(--secondary-color);
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
-.filter-nav {
+.filter {
+    display: block;
     color: var(--primary-text-color);
     background: #F5F4FA;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+
+.web {
+    width: 128px;
+    height: 38px;
+}
+.apps {
+    width: 145px;
+    height: 38px;
+}
+.design {
+    width: 103px;
+    height: 38px;
+}
+.marketing {
+    width: 130px;
+    height: 38px;
+}
+.main {
+    margin-right: 8px;
+}
+
+.filter:not(:last-child) {
+    margin-right: 8px;
 }
 
 .main:hover,
@@ -476,22 +557,33 @@ address {
     background: var(--secondary-color);
 }
 
-.filter-nav:hover,
-.filter-nav:focus {
+.filter:hover,
+.filter:focus {
     color: var(--accent-color);
     background: var(--secondary-color);
 }
-
-.projects {
-    list-style: none;
+.container-pro {
+   
+    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
 }
 
-.conteiner {
+
+.cont {
+    display: block;
     margin: 0 auto;
     width: 370px;
     height: 404px;
     background: var(--secondary-color);
-
+    border: 1px solid #EEEEEE;
 }
 
 
