@@ -33,6 +33,14 @@ img {
     display: block;
 }
 
+.container {
+
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
 body {
     background-color: var(--secondary-color);
     font-family: var(--primary-font-family);
@@ -47,16 +55,21 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.container-hed {
+.container {
     
+    
+    
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.hed {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1200px;
     height: 80px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+
 }   
 
 
@@ -174,6 +187,7 @@ header {
 .hero {
     
     height: 600px;
+    padding-top: 200px;
     margin-top: 0;
     margin-bottom: 0;
     background-color: #27303a;
@@ -184,7 +198,7 @@ header {
 .hero-title {
     display: block;
     width: 696px;
-    padding-top: 200px;
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -230,7 +244,7 @@ header {
 
 .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
+    
 }
 
 .visually-hidden {
@@ -247,21 +261,22 @@ header {
     overflow: hidden;
 }
 
-.container.adv {
-    display: flex;
+.container {
+    
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     
 }
 
+.adv {
+    display: flex;
+} 
 .adv-title {
     
     display: block;
     width: 270px;
-    height: 42px;
-    
-    
+   
     
     font-weight: 700;
     font-size: 14px;
@@ -273,10 +288,23 @@ header {
 .adv-title:not(:last-child) {
     margin-right: 30px;
 }
+.tittle {
+    width: 270px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--primary-text-color);
+}
 
-.text { margin-top: 10px;
+.text { 
+    
     font-weight: 400;
-
+    width: 270px;
     line-height: 1.71;
     text-transform: none;
     color: var(--secondary-text-color);
@@ -293,11 +321,8 @@ header {
 
 .work-title {
     
-    width: 198px;
+    text-align: center;
     height: 42px;
-    margin-left: auto;
-    margin-right: auto;
-    
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -305,12 +330,15 @@ header {
     
 }
 
-.container-work {
-    display: flex;
+.container {
+    
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     
+}
+.work {
+    display: flex;
 }
 
 .item {
@@ -335,29 +363,27 @@ header {
 
 .team-title {
     
-    width: 165px;
+    text-align: center;
     height: 42px;
-    
-    margin-left: auto;
-    margin-right: auto;
-   
     margin-bottom: 50px;
-    
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 
 }
 
-.container-card {
-    display: flex;
+.container {
+    
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     
         
 }
+.contcard {
+    display: flex;
+}
+
 .card {
     display: block;
     
@@ -376,7 +402,9 @@ header {
     border-radius: 0px;
     
 }
-
+.person {
+    padding: 20px 24px;
+}
 .name {
     text-align: center;
     margin-top: 30px;
@@ -405,12 +433,15 @@ footer {
     
 } 
 
-.container-foot {
-    display: block;
+.container {
+    
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 
+}
+.foot {
+    display: block;
 }
 
 address {
@@ -430,7 +461,7 @@ address {
 }
 
 .link-touch {
-    display: inline-block;
+    display: block;
     width: 231px; 
     
     text-decoration: none;
