@@ -55,14 +55,7 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.container {
-    
-    
-    
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 .hed {
     display: flex;
     align-items: center;
@@ -198,7 +191,6 @@ header {
 .hero-title {
     display: block;
     width: 696px;
-    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -261,13 +253,7 @@ header {
     overflow: hidden;
 }
 
-.container {
-    
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    
-}
+
 
 .adv {
     display: flex;
@@ -330,13 +316,7 @@ header {
     
 }
 
-.container {
-    
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    
-}
+
 .work {
     display: flex;
 }
@@ -372,14 +352,7 @@ header {
 
 }
 
-.container {
-    
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    
-        
-}
+
 .contcard {
     display: flex;
 }
@@ -433,13 +406,7 @@ footer {
     
 } 
 
-.container {
-    
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 
-}
 .foot {
     display: block;
 }
@@ -510,22 +477,19 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.container-button {
+
+.buttons {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
     margin-bottom: 50px;
     justify-content: center;
-
 }
 
 
-.btn {
+.point {
     display: block;
 }
 
-.btn:not(:last-child) {
+.point:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -592,12 +556,7 @@ address {
     background: var(--secondary-color);
 }
 
-.container-pro {
-   
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 .card-set {
     display: flex;
